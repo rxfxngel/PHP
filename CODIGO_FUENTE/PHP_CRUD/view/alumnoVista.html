@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+
+   <script type="text/javascript">
+   	
+   	$(function(){
+   		console.log("hola");
+   		construirTable();
+   	});
+
+   	function construirTable(){
+
+   		function afterCallBD(data){
+   			$("#contenido")[0].innerHTML=tablaHtml(data);
+   		}
+
+   		ajaxGenerico(true,"../controller/alumnoController.php", "JSON", {
+            ALUMNO:1,
+            opcion:'LISTAR'
+        }, function(res) {
+            afterCallBD(res);
+        });
+   	}
+
+   	function tablaHtml(dataJson){
+   		var html="";
+
+   		html+="<table border='1'cellspacing='0'>";
+   		html+="<tr>";
+	   		html+="<td>ID";
+	   		html+="</td>";
+	   		html+="<td>NOMBRE";
+	   		html+="</td>";
+	   		html+="<td>APELLIDO";
+	   		html+="</td>";
+	   		html+="<td>GRADO";
+	   		html+="</td>";
+   		html+="</tr>";
+   		for (var i = 0; i < dataJson.length; i++) {
+   			html+="<tr>";
+   			html+="<td>"+dataJson[i].id;
+	   		html+="</td>";
+	   		html+="<td>"+dataJson[i].nombre;
+	   		html+="</td>";
+	   		html+="<td>"+dataJson[i].apellido;
+	   		html+="</td>";
+	   		html+="<td>"+dataJson[i].grado;
+	   		html+="</td>";
+	   		html+="</tr>";
+   		}
+
+   		html+="<table>";
+
+   		return html;
+   	}
+
+   	function ajaxGenerico(async, url, dataType, data, func) {
+            $.ajax({
+                async: async,
+                dataType: dataType,
+                type: "POST",
+                url: url,
+                data: data
+            }).done(function (data) {
+                func(data);
+            }).fail(function (err) {
+                func(err);
+            });
+        }
+   </script>
+
+</head>
+<body>
+
+	<div id="contenido"></div>
+
+</body>
+</html>
