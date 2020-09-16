@@ -160,6 +160,7 @@ Imagen cargando
 >Descargamos la imagen svg, creamos la carpeta images dentro de la carpeta view y pegamos la imagen
 >https://github.com/rxfxngel/PHP/blob/master/CODIGO_FUENTE/PHP_CRUD/view/images/cargando.svg
 > `PHP_CRUD/view/images/cargando.svg`
+
 Creamos la vista
 ``` html
 <!DOCTYPE html>
