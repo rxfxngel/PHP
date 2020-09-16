@@ -36,7 +36,7 @@ abstract class conexion{
 }
 
 ```
-Creamos la clase accesDAO `PHP_CRUD/model/accesDAO.php` e implementamos el metodo ejecutar consulta  para definir los parametros y metodos para la conexion a la base de datos
+Creamos la clase accesDAO `PHP_CRUD/model/accesDAO.php` e implementamos el metodo ejecutar consulta
 
 ``` php
 
