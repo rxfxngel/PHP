@@ -480,6 +480,6 @@ Creamos la vista `PHP_CRUD/view/alumnoView.html`
 ```
 
 > Eso es todo sugerencias,dudas,comentarios:
-> rxfxngel@gmail.com 
-> https://www.facebook.com/Rxfxngel/
+> - rxfxngel@gmail.com 
+> - https://www.facebook.com/Rxfxngel/
 
