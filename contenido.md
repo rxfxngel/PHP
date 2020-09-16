@@ -122,7 +122,7 @@ Creamos la clase alumno
 	}
 ```
 creamos el constructor
-```
+``` php
 <?php
 
 include_once '../model/alumno.php';
