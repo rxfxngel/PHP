@@ -3,6 +3,27 @@
 ## Carpetas
 - creamos nuestra carpeta del proyecto `PHP_CRUD`
 - creamos tres carpetas `PHP_CRUD/model` `PHP_CRUD/view` `PHP_CRUD/controller` modelo-vista-controllador
+
+## Base de datos Mysql
+- Crear la base de datos: alumno
+- Ejecutar el siguiente script
+``` sql
+-- Estructura de tabla para la tabla `alumno`
+CREATE TABLE IF NOT EXISTS `alumno` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `NOMBRE` varchar(255) NOT NULL,
+  `APELLIDO` varchar(255) NOT NULL,
+  `GRADO` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=41 ;
+-- Volcado de datos para la tabla `alumno`
+
+INSERT INTO `alumno` (`ID`, `NOMBRE`, `APELLIDO`, `GRADO`) VALUES
+(36, 'ADRIANA', 'MORALES', 7),
+(39, 'Rafael', 'Mamani', 1),
+(40, 'Pepe', 'Rios', 3);
+```
+
 ## Conexion a la base de datos
 Creamos la clase abstracta conexion `PHP_CRUD/model/conexion.php` para definir los parametros y metodos para la conexion a la base de datos
 
