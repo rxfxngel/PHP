@@ -5,7 +5,7 @@
 - creamos tres carpetas `PHP_CRUD/model` `PHP_CRUD/view` `PHP_CRUD/controller` modelo-vista-controllador
 
 ## Base de datos Mysql
-- Crear la base de datos: alumno
+- Crear la base de datos: colegio
 - Ejecutar el siguiente script
 ``` sql
 -- Estructura de tabla para la tabla `alumno`
