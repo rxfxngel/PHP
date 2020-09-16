@@ -63,7 +63,7 @@ class accesDAO extends conexion{
 }
 
 ```
-Creamos la clase alumno
+Creamos la clase alumno`PHP_CRUD/model/alumno.php` 
 ``` php
 <?php
 	require_once 'accesDAO.php';
@@ -121,7 +121,7 @@ Creamos la clase alumno
 		}	
 	}
 ```
-creamos el constructor
+creamos el controlador `PHP_CRUD/controller/alumnoController.php` 
 ``` php
 <?php
 
@@ -161,7 +161,7 @@ Imagen cargando
 >https://github.com/rxfxngel/PHP/blob/master/CODIGO_FUENTE/PHP_CRUD/view/images/cargando.svg
 > `PHP_CRUD/view/images/cargando.svg`
 
-Creamos la vista
+Creamos la vista `PHP_CRUD/view/alumnoView.html` 
 ``` html
 <!DOCTYPE html>
 <html>
