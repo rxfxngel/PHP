@@ -162,7 +162,7 @@ if (isset($_POST["ALUMNO"])) {
 ## Vista alumno
 
 >Nota: :eyes: Descargamos la imagen svg, creamos la carpeta images dentro de la carpeta view y pegamos la imagen
->[Descargar Imagen](https://github.com/rxfxngel/PHP/blob/master/CODIGO_FUENTE/PHP_CRUD/view/images/cargando.svg)
+> https://github.com/rxfxngel/PHP/blob/master/CODIGO_FUENTE/PHP_CRUD/view/images/cargando.svg
 > `PHP_CRUD/view/images/cargando.svg`
 
 Creamos la vista `PHP_CRUD/view/alumnoView.html` 
