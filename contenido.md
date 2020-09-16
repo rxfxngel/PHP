@@ -36,6 +36,7 @@ abstract class conexion{
 }
 
 ```
+## Metodo ejecutar consulta
 Creamos la clase accesDAO `PHP_CRUD/model/accesDAO.php` e implementamos el metodo ejecutar consulta
 
 ``` php
@@ -63,6 +64,7 @@ class accesDAO extends conexion{
 }
 
 ```
+## Modelo alumno
 Creamos la clase alumno`PHP_CRUD/model/alumno.php` 
 ``` php
 <?php
@@ -121,6 +123,7 @@ Creamos la clase alumno`PHP_CRUD/model/alumno.php`
 		}	
 	}
 ```
+## Controlador Alumno
 creamos el controlador `PHP_CRUD/controller/alumnoController.php` 
 ``` php
 <?php
@@ -156,8 +159,9 @@ if (isset($_POST["ALUMNO"])) {
 }
 
 ```
-Imagen cargando
->Descargamos la imagen svg, creamos la carpeta images dentro de la carpeta view y pegamos la imagen
+## Vista alumno
+
+>Nota: :eyes: Descargamos la imagen svg, creamos la carpeta images dentro de la carpeta view y pegamos la imagen
 >https://github.com/rxfxngel/PHP/blob/master/CODIGO_FUENTE/PHP_CRUD/view/images/cargando.svg
 > `PHP_CRUD/view/images/cargando.svg`
 
