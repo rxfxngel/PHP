@@ -3,28 +3,28 @@
 include_once '../model/alumno.php';
 
 if (isset($_POST["ALUMNO"])) {
-	$opcion="";
-	$id="";	
-	$nombre="";
-	$apellido="";
-	$grado="";
+	$OPCION="";
+	$ID="";	
+	$NOMBRE="";
+	$APELLIDO="";
+	$GRADO="";
 
 
-	if(isset($_POST["opcion"])){$opcion=$_POST["opcion"];}
-	if(isset($_POST["id"])){$id=$_POST["id"];}
-	if(isset($_POST["nombre"])){$nombre=$_POST["nombre"];}
-	if(isset($_POST["apellido"])){$apellido=$_POST["apellido"];}
-	if(isset($_POST["grado"])){$grado=$_POST["grado"];}
+	if(isset($_POST["OPCION"])){$OPCION=$_POST["OPCION"];}
+	if(isset($_POST["ID"])){$ID=$_POST["ID"];}
+	if(isset($_POST["NOMBRE"])){$NOMBRE=$_POST["NOMBRE"];}
+	if(isset($_POST["APELLIDO"])){$APELLIDO=$_POST["APELLIDO"];}
+	if(isset($_POST["GRADO"])){$GRADO=$_POST["GRADO"];}
 
-	$alumno = new alumno($id,$nombre,$apellido,$grado);
+	$alumno = new alumno($ID,$NOMBRE,$APELLIDO,$GRADO);
 
-	if ($opcion=="LISTAR") {
+	if ($OPCION=="LISTAR") {
 		$alumno->listarAlumno();
-	}else if($opcion=="CREAR"){
+	}else if($OPCION=="CREAR"){
 		$alumno->crearAlumno();
-	}else if($opcion=="EDITAR"){
+	}else if($OPCION=="EDITAR"){
 		$alumno->actualizarAlumno();
-	}else if($opcion=="ELIMINAR"){
+	}else if($OPCION=="ELIMINAR"){
 		$alumno->eliminarAlumno();
 	}
 
