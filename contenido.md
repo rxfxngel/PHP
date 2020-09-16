@@ -123,7 +123,7 @@ Creamos la clase alumno`PHP_CRUD/model/alumno.php`
 		}	
 	}
 ```
-## Controlador Alumno
+## Controlador alumno
 creamos el controlador `PHP_CRUD/controller/alumnoController.php` 
 ``` php
 <?php
@@ -479,5 +479,7 @@ Creamos la vista `PHP_CRUD/view/alumnoView.html`
 </html>
 ```
 
-
+> Eso es todo sugerencias,dudas,comentarios:
+> rxfxngel@gmail.com 
+> https://www.facebook.com/Rxfxngel/
 
